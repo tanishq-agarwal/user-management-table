@@ -1,5 +1,4 @@
 import Head from "next/head";
-import UserTable from "../components/UserTable/UserTable";
 
 export default function Home() {
   return (

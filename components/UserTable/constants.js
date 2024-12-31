@@ -11,8 +11,8 @@ export const columns = [
     accessorKey: "username",
     header: "Username",
   },
-//   {
-//     header: "Phone",
-//     accessorKey: "phone",
-//   },
+  //   {
+  //     header: "Phone",
+  //     accessorKey: "phone",
+  //   },
 ];

@@ -9,24 +9,10 @@ const StyledTable = ({ table }) => {
                 key={header.id}
                 className="px-4 py-2 text-left text-gray-600 font-medium"
               >
-                {/* Sorting Logic */}
-                <div
-                  className="flex items-center"
-                  onClick={() => header.column.getToggleSortingHandler()}
-                >
-                  {header.isPlaceholder
-                    ? null
-                    : typeof header.column.columnDef.header === "function"
-                    ? header.column.columnDef.header()
-                    : header.column.columnDef.header}
-                  <span>
-                    {header.column.getIsSorted()
-                      ? header.column.getIsSorted() === "asc"
-                        ? " 🔼"
-                        : " 🔽"
-                      : null}
-                  </span>
-                </div>
+                {/* Display column header */}
+                {typeof header.column.columnDef.header === "function"
+                  ? header.column.columnDef.header()
+                  : header.column.columnDef.header}
 
                 {/* Filtering Logic */}
                 <div className="mt-1">

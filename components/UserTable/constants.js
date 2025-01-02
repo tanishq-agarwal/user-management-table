@@ -2,6 +2,7 @@ export const columns = [
   {
     accessorKey: "name",
     header: "Name",
+    enableSorting: true,
   },
   {
     accessorKey: "email",

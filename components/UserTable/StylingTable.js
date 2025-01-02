@@ -14,6 +14,25 @@ const StyledTable = ({ table }) => {
                   ? header.column.columnDef.header()
                   : header.column.columnDef.header}
 
+                {/* Sorting Logic */}
+                {header.column.getCanSort() && (
+                  <button
+                    onClick={header.column.getToggleSortingHandler()}
+                    className="ml-1 text-gray-400 hover:text-gray-600 focus:outline-none"
+                    aria-label={`Sort by ${header.column.id}`}
+                  >
+                    {header.column.getIsSorted() === "asc" && (
+                      <span>▲</span> // Ascending icon
+                    )}
+                    {header.column.getIsSorted() === "desc" && (
+                      <span>▼</span> // Descending icon
+                    )}
+                    {!header.column.getIsSorted() && (
+                      <span>↕(unsorted)</span> // Default unsorted icon
+                    )}
+                  </button>
+                )}
+
                 {/* Filtering Logic */}
                 <div className="mt-1">
                   <input

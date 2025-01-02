@@ -86,7 +86,7 @@ The sorting logic initially wasn’t working due to:
 Implementing dynamic pagination using Next.js routing required syncing the page query parameter with the useUsers hook, ensuring smooth transitions without breaking the UI.
 
 ## Dependencies
-**React:** Component-based user interfaces.
-**Next.js:** Server-side rendering and routing.
-**@tanstack/react-table:** Advanced table features.
-**Tailwind CSS:** Utility-first styling.
+- **React:** Component-based user interfaces.
+- **Next.js:** Server-side rendering and routing.
+- **@tanstack/react-table:** Advanced table features.
+- **Tailwind CSS:** Utility-first styling.
